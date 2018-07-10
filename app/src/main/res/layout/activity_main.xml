@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colour1"
+    tools:context="techgroup.com.slaeyplay.MainActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/images"
+        app:civ_border_color="#9400D3" />
+
+    <Button
+        android:id="@+id/playbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="99dp"
+        android:layout_toStartOf="@+id/forward"
+        android:background="@drawable/ic_play_arrow_black_24dp" />
+
+    <Button
+        android:id="@+id/pausebtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/playbtn"
+        android:layout_alignBottom="@+id/playbtn"
+        android:layout_marginEnd="27dp"
+        android:layout_toStartOf="@+id/playbtn"
+        android:background="@drawable/ic_pause_circle_outline_black_24dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/forward"
+        android:layout_alignBottom="@+id/forward"
+        android:layout_alignStart="@+id/next"
+        android:background="@drawable/ic_fast_rewind_black_24dp" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/pausebtn"
+        android:layout_alignBottom="@+id/pausebtn"
+        android:layout_alignEnd="@+id/next"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_fast_forward_black_24dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginLeft="30dp"
+        android:text=" play a video" />
+
+
+</RelativeLayout>
